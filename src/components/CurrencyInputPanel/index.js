@@ -19,13 +19,12 @@ import Modal from '../Modal'
 import TokenLogo from '../TokenLogo'
 import SearchIcon from '../../assets/images/magnifying-glass.svg'
 import { useTransactionAdder, usePendingApproval } from '../../contexts/Transactions'
-import { useTokenDetails, useAllTokenDetails } from '../../contexts/Tokens'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 import { transparentize } from 'polished'
 import { Spinner } from '../../theme'
 import Circle from '../../assets/images/circle-grey.svg'
 import { useUSDPrice } from '../../contexts/Application'
-
+import { ATOMIC_CONVERT_ADDR } from '../../constants'
 const GAS_MARGIN = ethers.utils.bigNumberify(1000)
 
 const SubCurrencySelect = styled.button`
@@ -270,6 +269,8 @@ const SpinnerWrapper = styled(Spinner)`
 export default function CurrencyInputPanel({
   onValueChange = () => {},
   allBalances,
+  useTokenDetails,
+  useAllTokenDetails,
   renderInput,
   onCurrencySelected = () => {},
   title,
@@ -288,8 +289,6 @@ export default function CurrencyInputPanel({
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
   const tokenContract = useTokenContract(selectedTokenAddress)
-  const { exchangeAddress: selectedTokenExchangeAddress } = useTokenDetails(selectedTokenAddress)
-
   const pendingApproval = usePendingApproval(selectedTokenAddress)
 
   const addTransaction = useTransactionAdder()
@@ -305,11 +304,11 @@ export default function CurrencyInputPanel({
           <SubCurrencySelect
             onClick={async () => {
               const estimatedGas = await tokenContract.estimate.approve(
-                selectedTokenExchangeAddress,
+                ATOMIC_CONVERT_ADDR,
                 ethers.constants.MaxUint256
               )
               tokenContract
-                .approve(selectedTokenExchangeAddress, ethers.constants.MaxUint256, {
+                .approve(ATOMIC_CONVERT_ADDR, ethers.constants.MaxUint256, {
                   gasLimit: calculateGasMargin(estimatedGas, GAS_MARGIN)
                 })
                 .then(response => {
@@ -415,13 +414,15 @@ export default function CurrencyInputPanel({
           }}
           onTokenSelect={onCurrencySelected}
           allBalances={allBalances}
+          useTokenDetails={useTokenDetails}
+          useAllTokenDetails={useAllTokenDetails}
         />
       )}
     </InputPanel>
   )
 }
 
-function CurrencySelectModal({ isOpen, onDismiss, onTokenSelect, allBalances }) {
+function CurrencySelectModal({ isOpen, onDismiss, onTokenSelect, allBalances, useTokenDetails, useAllTokenDetails}) {
   const { t } = useTranslation()
 
   const [searchQuery, setSearchQuery] = useState('')

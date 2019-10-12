@@ -1,0 +1,590 @@
+[
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "acceptOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "minToken",
+				"type": "uint256"
+			},
+			{
+				"name": "boughtCurrencyKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "ethToOtherTokenInput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "tokenBought",
+				"type": "uint256"
+			},
+			{
+				"name": "boughtCurrencyKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "ethToOtherTokenOutput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "minSeth",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "ethToSethInput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "sethBought",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "ethToSethOutput",
+		"outputs": [
+			{
+				"name": "ethAmt",
+				"type": "uint256"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "nominateNewOwner",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "srcKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "srcAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "minEth",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "otherTokenToEthInput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ethBought",
+				"type": "uint256"
+			},
+			{
+				"name": "srcKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "maxSrcAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "otherTokenToEthOutput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnerNominated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "oldOwner",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnerChanged",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "sEthSold",
+				"type": "uint256"
+			},
+			{
+				"name": "minEth",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "sEthToEthInput",
+		"outputs": [
+			{
+				"name": "ethAmt",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ethBought",
+				"type": "uint256"
+			},
+			{
+				"name": "maxSethSold",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "sEthToEthOutput",
+		"outputs": [
+			{
+				"name": "sEthAmt",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_synthetix",
+				"type": "address"
+			}
+		],
+		"name": "setSynthetix",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_synRates",
+				"type": "address"
+			}
+		],
+		"name": "setSynthsExchangeRates",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_synFeePool",
+				"type": "address"
+			}
+		],
+		"name": "setSynthsFeePool",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_uniswapSethExchange",
+				"type": "address"
+			}
+		],
+		"name": "setUniswapSethExchange",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "srcKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "srcAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "dstKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "minDstAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "sTokenToStokenInput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "srcKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "maxSrcAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "dstKey",
+				"type": "bytes32"
+			},
+			{
+				"name": "boughtDstAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "deadline",
+				"type": "uint256"
+			},
+			{
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "sTokenToStokenOutput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "src",
+				"type": "bytes32"
+			},
+			{
+				"name": "srcAmt",
+				"type": "uint256"
+			},
+			{
+				"name": "dst",
+				"type": "bytes32"
+			}
+		],
+		"name": "inputPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "nominatedOwner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "src",
+				"type": "bytes32"
+			},
+			{
+				"name": "dst",
+				"type": "bytes32"
+			},
+			{
+				"name": "dstAmt",
+				"type": "uint256"
+			}
+		],
+		"name": "outputPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "synFeePool",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "synRates",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "synthetix",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "uniswapSethExchange",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

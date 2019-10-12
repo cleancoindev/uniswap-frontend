@@ -10,7 +10,7 @@ import { Button } from '../../theme'
 import AddressInputPanel from '../../components/AddressInputPanel'
 import OversizedPanel from '../../components/OversizedPanel'
 import { useFactoryContract } from '../../hooks'
-import { useTokenDetails } from '../../contexts/Tokens'
+import { useTokenDetailsForLiquidity } from '../../contexts/Tokens'
 import { useTransactionAdder } from '../../contexts/Transactions'
 
 const SummaryPanel = styled.div`
@@ -65,7 +65,7 @@ function CreateExchange({ location, params }) {
   })
   const [tokenAddressError, setTokenAddressError] = useState()
 
-  const { name, symbol, decimals, exchangeAddress } = useTokenDetails(tokenAddress.address)
+  const { name, symbol, decimals, exchangeAddress } = useTokenDetailsForLiquidity(tokenAddress.address)
   const addTransaction = useTransactionAdder()
 
   // clear url of query

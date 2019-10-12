@@ -22,12 +22,151 @@ const ETH = {
   ETH: {
     [NAME]: 'Ethereum',
     [SYMBOL]: 'ETH',
-    [DECIMALS]: 18,
-    [EXCHANGE_ADDRESS]: null
+    [DECIMALS]: 18
   }
 }
 
 const INITIAL_TOKENS_CONTEXT = {
+  4: {
+    '0xDA5B056Cfb861282B4b59d29c9B395bcC238D29B': {
+        [NAME]: 'Basic Attention Token',
+        [SYMBOL]: 'BAT',
+        [DECIMALS]: 18,
+        [EXCHANGE_ADDRESS]: '0x9B913956036a3462330B0642B20D3879ce68b450'
+    },
+    '0x2448eE2641d78CC42D7AD76498917359D961A783': {
+        [NAME]: 'Dai Stablecoin v1.0',
+        [SYMBOL]: 'DAI',
+        [DECIMALS]: 18,
+        [EXCHANGE_ADDRESS]: '0x77dB9C915809e7BE439D2AB21032B1b8B58F6891'
+    },
+    '0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85': {
+        [NAME]: 'Maker',
+        [SYMBOL]: 'MKR',
+        [DECIMALS]: 18,
+        [EXCHANGE_ADDRESS]: '0x93bB63aFe1E0180d0eF100D774B473034fd60C36'
+    },
+    '0xF22e3F33768354c9805d046af3C0926f27741B43': {
+        [NAME]: '0x Protocol Token',
+        [SYMBOL]: 'ZRX',
+        [DECIMALS]: 18,
+        [EXCHANGE_ADDRESS]: '0xaBD44a1D1b9Fb0F39fE1D1ee6b1e2a14916D067D'
+    },
+    '0xFF1Fbc2989827A459A87175d5d4Bb021420dEca3': {
+      [NAME]: 'Synthetix Synth sETH Token',
+      [SYMBOL]: 'sETH',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0xfbd460766fa29e215bfa07b776463c3fe6985698'
+    },
+    '0x04CFbc89F161EE33f4984490B1B73A2D1548fA3D': {
+      [NAME]: 'Synthetix Synth sAUD Token',
+      [SYMBOL]: 'sAUD',
+      [DECIMALS]: 18
+    },
+    '0x6490C038D1298A3a2FcE6F9784859950Fe3C4F46': {
+      [NAME]: 'Synthetix Synth sBNB Token',
+      [SYMBOL]: 'sBNB',
+      [DECIMALS]: 18
+    },
+    '0xCb6731edB04207b052C1A3043eA1BBAa019cf2De': {
+      [NAME]: 'Synthetix Synth sBTC Token',
+      [SYMBOL]: 'sBTC',
+      [DECIMALS]: 18
+    },
+    '0xE14228E0d71548BD6bC9357adF97e415F49dE875': {
+      [NAME]: 'Synthetix Synth sCEX Token',
+      [SYMBOL]: 'sCEX',
+      [DECIMALS]: 18
+    },
+    '0x4Ee0bF17978ca328dF569b3013B8CD2136A4e6F9': {
+      [NAME]: 'Synthetix Synth sCHF Token',
+      [SYMBOL]: 'sCHF',
+      [DECIMALS]: 18
+    },
+    '0xFbB6526ed92DA8915d4843a86166020d0B7bAAd0': {
+      [NAME]: 'Synthetix Synth sEUR Token',
+      [SYMBOL]: 'sEUR',
+      [DECIMALS]: 18
+    },
+    '0xF413258c12750dC3CeFE73d126068FefBA803f81': {
+      [NAME]: 'Synthetix Synth sGBP Token',
+      [SYMBOL]: 'sGBP',
+      [DECIMALS]: 18
+    },
+    '0x923D55ac3c7827C26eCc38f06fefba5b560713f0': {
+      [NAME]: 'Synthetix Synth sJPY Token',
+      [SYMBOL]: 'sJPY',
+      [DECIMALS]: 18
+    },
+    '0x76baaa95D3630c38b6acAa55E9682394F6Be7A34': {
+      [NAME]: 'Synthetix Synth sMKR Token',
+      [SYMBOL]: 'sMKR',
+      [DECIMALS]: 18
+    },
+    '0x335C816f00aeFe38f651CCeCcED2E63ac01236A8': {
+      [NAME]: 'Synthetix Synth sTRX Token',
+      [SYMBOL]: 'sTRX',
+      [DECIMALS]: 18
+    },
+    '0x23Bf838AF72Ee8F43870A73947d8F4Edb63adAe3': {
+      [NAME]: 'Synthetix Synth sUSD Token',
+      [NAME]: 'Synth sUSD',
+      [SYMBOL]: 'sUSD',
+      [DECIMALS]: 18
+    },
+    '0xFa46FcA4e3c742f5Df9b983B89B07d6d95542a3b': {
+      [NAME]: 'Synthetix Synth sXAG Token',
+      [SYMBOL]: 'sXAG',
+      [DECIMALS]: 18
+    },
+    '0x546df3DF51979Fdf3eeb2ED2A5bB2d6883B01000': {
+      [NAME]: 'Synthetix Synth sXAU Token',
+      [SYMBOL]: 'sXAU',
+      [DECIMALS]: 18
+    },
+    '0xc87Ec92363711f18e10B1EaaC8fc7351e9cef235': {
+      [NAME]: 'Synthetix Synth sXTZ Token',
+      [SYMBOL]: 'sXTZ',
+      [DECIMALS]: 18
+    },
+
+    '0x302A11ef22A2485D15a3A9b460Fa4d87988b1D7E': {
+      [NAME]: 'Synthetix Synth iBNB Token',
+      [SYMBOL]: 'iBNB',
+      [DECIMALS]: 18
+    },
+    '0x08Ff5939a97052CEeE674A9D5cA166d617783310': {
+      [NAME]: 'Synthetix Synth iBTC Token',
+      [SYMBOL]: 'iBTC',
+      [DECIMALS]: 18
+    },
+    '0xDA7Fb74EeD235834Ba1B940eB9ede1A972698edb': {
+      [NAME]: 'Synthetix Synth iCEX Token',
+      [SYMBOL]: 'iCEX',
+      [DECIMALS]: 18
+    },
+    '0x46ea6AF94f24c0641b59743B433035A4cB2A932D': {
+      [NAME]: 'Synthetix Synth iETH Token',
+      [SYMBOL]: 'iETH',
+      [DECIMALS]: 18
+    },
+    '0x93962784C651a46E7a9f0f75ca97CB5887B43383': {
+      [NAME]: 'Synthetix Synth iMKR Token',
+      [SYMBOL]: 'iMKR',
+      [DECIMALS]: 18
+    },
+    '0x2E82c68c50012a1fF440d9cC71Fbc78981279eeD': {
+      [NAME]: 'Synthetix Synth iTRX Token',
+      [SYMBOL]: 'iTRX',
+      [DECIMALS]: 18
+    },
+    '0xA50142739C3D365B5348602E7d976dEF9369D5Fc': {
+      [NAME]: 'Synthetix Synth iXTZ Token',
+      [SYMBOL]: 'iXTZ',
+      [DECIMALS]: 18
+    },
+
+  },
   1: {
     '0xD46bA6D942050d489DBd938a2C909A5d5039A161': {
       [NAME]: 'Ampleforth',
@@ -430,15 +569,7 @@ const INITIAL_TOKENS_CONTEXT = {
       [SYMBOL]: 'ZRX',
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0xaE76c84C9262Cdb9abc0C2c8888e62Db8E22A0bF'
-    }
-  },
-  4: {
-    '0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa': {
-      [NAME]: 'Dai',
-      [SYMBOL]: 'DAI',
-      [DECIMALS]: 18,
-      [EXCHANGE_ADDRESS]: '0xaF51BaAA766b65E8B3Ee0C2c33186325ED01eBD5'
-    }
+    },
   }
 }
 
@@ -451,7 +582,7 @@ function useTokensContext() {
 function reducer(state, { type, payload }) {
   switch (type) {
     case UPDATE: {
-      const { networkId, tokenAddress, name, symbol, decimals, exchangeAddress } = payload
+      const { networkId, tokenAddress, name, symbol, decimals } = payload
       return {
         ...state,
         [networkId]: {
@@ -459,8 +590,7 @@ function reducer(state, { type, payload }) {
           [tokenAddress]: {
             [NAME]: name,
             [SYMBOL]: symbol,
-            [DECIMALS]: decimals,
-            [EXCHANGE_ADDRESS]: exchangeAddress
+            [DECIMALS]: decimals
           }
         }
       }
@@ -474,8 +604,8 @@ function reducer(state, { type, payload }) {
 export default function Provider({ children }) {
   const [state, dispatch] = useReducer(reducer, INITIAL_TOKENS_CONTEXT)
 
-  const update = useCallback((networkId, tokenAddress, name, symbol, decimals, exchangeAddress) => {
-    dispatch({ type: UPDATE, payload: { networkId, tokenAddress, name, symbol, decimals, exchangeAddress } })
+  const update = useCallback((networkId, tokenAddress, name, symbol, decimals) => {
+    dispatch({ type: UPDATE, payload: { networkId, tokenAddress, name, symbol, decimals } })
   }, [])
 
   return (
@@ -490,13 +620,13 @@ export function useTokenDetails(tokenAddress) {
 
   const [state, { update }] = useTokensContext()
   const allTokensInNetwork = { ...ETH, ...(safeAccess(state, [networkId]) || {}) }
-  const { [NAME]: name, [SYMBOL]: symbol, [DECIMALS]: decimals, [EXCHANGE_ADDRESS]: exchangeAddress } =
+  const { [NAME]: name, [SYMBOL]: symbol, [DECIMALS]: decimals} =
     safeAccess(allTokensInNetwork, [tokenAddress]) || {}
 
   useEffect(() => {
     if (
       isAddress(tokenAddress) &&
-      (name === undefined || symbol === undefined || decimals === undefined || exchangeAddress === undefined) &&
+      (name === undefined || symbol === undefined || decimals === undefined) &&
       (networkId || networkId === 0) &&
       library
     ) {
@@ -505,14 +635,11 @@ export function useTokenDetails(tokenAddress) {
       const namePromise = getTokenName(tokenAddress, library).catch(() => null)
       const symbolPromise = getTokenSymbol(tokenAddress, library).catch(() => null)
       const decimalsPromise = getTokenDecimals(tokenAddress, library).catch(() => null)
-      const exchangeAddressPromise = getTokenExchangeAddressFromFactory(tokenAddress, networkId, library).catch(
-        () => null
-      )
 
-      Promise.all([namePromise, symbolPromise, decimalsPromise, exchangeAddressPromise]).then(
-        ([resolvedName, resolvedSymbol, resolvedDecimals, resolvedExchangeAddress]) => {
+      Promise.all([namePromise, symbolPromise, decimalsPromise]).then(
+        ([resolvedName, resolvedSymbol, resolvedDecimals]) => {
           if (!stale) {
-            update(networkId, tokenAddress, resolvedName, resolvedSymbol, resolvedDecimals, resolvedExchangeAddress)
+            update(networkId, tokenAddress, resolvedName, resolvedSymbol, resolvedDecimals)
           }
         }
       )
@@ -520,28 +647,101 @@ export function useTokenDetails(tokenAddress) {
         stale = true
       }
     }
-  }, [tokenAddress, name, symbol, decimals, exchangeAddress, networkId, library, update])
+  }, [tokenAddress, name, symbol, decimals, networkId, library, update])
 
-  return { name, symbol, decimals, exchangeAddress }
+  return { name, symbol, decimals }
 }
 
-export function useAllTokenDetails(requireExchange = true) {
+export function useSethAddress() {
   const { networkId } = useWeb3Context()
 
   const [state] = useTokensContext()
   const tokenDetails = { ...ETH, ...(safeAccess(state, [networkId]) || {}) }
 
-  return requireExchange
-    ? Object.keys(tokenDetails)
+  return Object.entries(tokenDetails)
+        .filter(
+            item => item[1][SYMBOL] === 'sETH'
+        )[0][0]
+}
+
+export function useAllTokenDetails() {
+  const { networkId } = useWeb3Context()
+
+  const [state] = useTokensContext()
+  const tokenDetails = { ...ETH, ...(safeAccess(state, [networkId]) || {}) }
+  return Object.keys(tokenDetails)
         .filter(
           tokenAddress =>
             tokenAddress === 'ETH' ||
-            (safeAccess(tokenDetails, [tokenAddress, EXCHANGE_ADDRESS]) &&
-              safeAccess(tokenDetails, [tokenAddress, EXCHANGE_ADDRESS]) !== ethers.constants.AddressZero)
+            (safeAccess(tokenDetails, [tokenAddress]) &&
+              safeAccess(tokenDetails, [tokenAddress]) !== ethers.constants.AddressZero)
         )
         .reduce((accumulator, tokenAddress) => {
-          accumulator[tokenAddress] = tokenDetails[tokenAddress]
+          if ((tokenDetails[tokenAddress][EXCHANGE_ADDRESS] === undefined) || (tokenDetails[tokenAddress][SYMBOL] === 'sETH')){
+            accumulator[tokenAddress] = tokenDetails[tokenAddress]
+          }
           return accumulator
         }, {})
-    : tokenDetails
 }
+
+export function useTokenDetailsForLiquidity(tokenAddress) {
+    const { networkId, library } = useWeb3Context()
+  
+    const [state, { update }] = useTokensContext()
+    const allTokensInNetwork = { ...ETH, ...(safeAccess(state, [networkId]) || {}) }
+    const { [NAME]: name, [SYMBOL]: symbol, [DECIMALS]: decimals, [EXCHANGE_ADDRESS]: exchangeAddress } =
+      safeAccess(allTokensInNetwork, [tokenAddress]) || {}
+  
+    useEffect(() => {
+      if (
+        isAddress(tokenAddress) &&
+        (name === undefined || symbol === undefined || decimals === undefined || exchangeAddress === undefined) &&
+        (networkId || networkId === 0) &&
+        library
+      ) {
+        let stale = false
+  
+        const namePromise = getTokenName(tokenAddress, library).catch(() => null)
+        const symbolPromise = getTokenSymbol(tokenAddress, library).catch(() => null)
+        const decimalsPromise = getTokenDecimals(tokenAddress, library).catch(() => null)
+        const exchangeAddressPromise = getTokenExchangeAddressFromFactory(tokenAddress, networkId, library).catch(
+          () => null
+        )
+  
+        Promise.all([namePromise, symbolPromise, decimalsPromise, exchangeAddressPromise]).then(
+          ([resolvedName, resolvedSymbol, resolvedDecimals, resolvedExchangeAddress]) => {
+            if (!stale) {
+              update(networkId, tokenAddress, resolvedName, resolvedSymbol, resolvedDecimals, resolvedExchangeAddress)
+            }
+          }
+        )
+        return () => {
+          stale = true
+        }
+      }
+    }, [tokenAddress, name, symbol, decimals, exchangeAddress, networkId, library, update])
+  
+    return { name, symbol, decimals, exchangeAddress }
+  }
+  
+export function useAllTokenDetailsForLiquidity(requireExchange = true) {
+    const { networkId } = useWeb3Context()
+  
+    const [state] = useTokensContext()
+    const tokenDetails = { ...ETH, ...(safeAccess(state, [networkId]) || {}) }
+  
+    return requireExchange
+      ? Object.keys(tokenDetails)
+          .filter(
+            tokenAddress =>
+              tokenAddress === 'ETH' ||
+              (safeAccess(tokenDetails, [tokenAddress, EXCHANGE_ADDRESS]) &&
+                safeAccess(tokenDetails, [tokenAddress, EXCHANGE_ADDRESS]) !== ethers.constants.AddressZero)
+          )
+          .reduce((accumulator, tokenAddress) => {
+            accumulator[tokenAddress] = tokenDetails[tokenAddress]
+            return accumulator
+          }, {})
+      : tokenDetails
+}
+  
