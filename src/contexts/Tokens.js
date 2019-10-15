@@ -58,109 +58,109 @@ const INITIAL_TOKENS_CONTEXT = {
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0x431295890a123c1542bc85f796fe3baf80dc0e25'
     },
-    '0x04CFbc89F161EE33f4984490B1B73A2D1548fA3D': {
+    '0x6Bc4e20EEBb433A8f25854b602ed7a9b18be4337': {
       [NAME]: 'Synthetix Synth sAUD Token',
       [SYMBOL]: 'sAUD',
       [DECIMALS]: 18
     },
-    '0x6490C038D1298A3a2FcE6F9784859950Fe3C4F46': {
+    '0x9aF5763Dc180f388A5fd20Dd7BA4B2790566f2eF': {
       [NAME]: 'Synthetix Synth sBNB Token',
       [SYMBOL]: 'sBNB',
       [DECIMALS]: 18
     },
-    '0xCb6731edB04207b052C1A3043eA1BBAa019cf2De': {
+    '0x27861E4776D162743ccD78379aDe6A876caf2203': {
       [NAME]: 'Synthetix Synth sBTC Token',
       [SYMBOL]: 'sBTC',
       [DECIMALS]: 18
     },
-    '0xE14228E0d71548BD6bC9357adF97e415F49dE875': {
+    '0x9bD2c9677492558c0eF2F30BB7c7aC694F8F62dC': {
       [NAME]: 'Synthetix Synth sCEX Token',
       [SYMBOL]: 'sCEX',
       [DECIMALS]: 18
     },
-    '0x4Ee0bF17978ca328dF569b3013B8CD2136A4e6F9': {
+    '0x41b60d5E660102EB83f179D67c45901c74594F50': {
       [NAME]: 'Synthetix Synth sCHF Token',
       [SYMBOL]: 'sCHF',
       [DECIMALS]: 18
     },
-    '0xFbB6526ed92DA8915d4843a86166020d0B7bAAd0': {
+    '0x6bCd1caE4A3c099c696B51f889bE2120DF62b7c0': {
       [NAME]: 'Synthetix Synth sEUR Token',
       [SYMBOL]: 'sEUR',
       [DECIMALS]: 18
     },
-    '0xF413258c12750dC3CeFE73d126068FefBA803f81': {
+    '0x46824bFAaFd049fB0Af9a45159A88e595Bbbb9f7': {
       [NAME]: 'Synthetix Synth sGBP Token',
       [SYMBOL]: 'sGBP',
       [DECIMALS]: 18
     },
-    '0x923D55ac3c7827C26eCc38f06fefba5b560713f0': {
+    '0x07e6869DeA314DF2e51fEf474d0FcaC5C2910190': {
       [NAME]: 'Synthetix Synth sJPY Token',
       [SYMBOL]: 'sJPY',
       [DECIMALS]: 18
     },
-    '0x76baaa95D3630c38b6acAa55E9682394F6Be7A34': {
+    '0x77275F2773950C715bcd9bA2a475C462919eD45D': {
       [NAME]: 'Synthetix Synth sMKR Token',
       [SYMBOL]: 'sMKR',
       [DECIMALS]: 18
     },
-    '0x335C816f00aeFe38f651CCeCcED2E63ac01236A8': {
+    '0xAD7258d0054c03112a4f5489A4B24eC34a2fc787': {
       [NAME]: 'Synthetix Synth sTRX Token',
       [SYMBOL]: 'sTRX',
       [DECIMALS]: 18
     },
-    '0x23Bf838AF72Ee8F43870A73947d8F4Edb63adAe3': {
+    '0xe109da5361299eD96D91146B8Cc12F682D21964e': {
       [NAME]: 'Synthetix Synth sUSD Token',
       [NAME]: 'Synth sUSD',
       [SYMBOL]: 'sUSD',
       [DECIMALS]: 18
     },
-    '0xFa46FcA4e3c742f5Df9b983B89B07d6d95542a3b': {
+    '0x919b0d375F741122BB74aacC821E27fb48745107': {
       [NAME]: 'Synthetix Synth sXAG Token',
       [SYMBOL]: 'sXAG',
       [DECIMALS]: 18
     },
-    '0x546df3DF51979Fdf3eeb2ED2A5bB2d6883B01000': {
+    '0x83266A95429b903cC5e954bF61c7eddf8a52b971': {
       [NAME]: 'Synthetix Synth sXAU Token',
       [SYMBOL]: 'sXAU',
       [DECIMALS]: 18
     },
-    '0xc87Ec92363711f18e10B1EaaC8fc7351e9cef235': {
+    '0xaD85C5B4273b73AE1514cC0569a6A783B3cB30aD': {
       [NAME]: 'Synthetix Synth sXTZ Token',
       [SYMBOL]: 'sXTZ',
       [DECIMALS]: 18
     },
 
-    '0x302A11ef22A2485D15a3A9b460Fa4d87988b1D7E': {
+    '0x148892d08C25C0AbF824C458Be9fc8C0D506Eb6b': {
       [NAME]: 'Synthetix Synth iBNB Token',
       [SYMBOL]: 'iBNB',
       [DECIMALS]: 18
     },
-    '0x08Ff5939a97052CEeE674A9D5cA166d617783310': {
+    '0x89E21ed2EBd6c55C28aAC0aA856483E74682FE15': {
       [NAME]: 'Synthetix Synth iBTC Token',
       [SYMBOL]: 'iBTC',
       [DECIMALS]: 18
     },
-    '0xDA7Fb74EeD235834Ba1B940eB9ede1A972698edb': {
+    '0x9972F7bF1e260E978B957fe54881E4E8a6798350': {
       [NAME]: 'Synthetix Synth iCEX Token',
       [SYMBOL]: 'iCEX',
       [DECIMALS]: 18
     },
-    '0x46ea6AF94f24c0641b59743B433035A4cB2A932D': {
+    '0xec98BB42C8F03485bf659378da694512a16f3482': {
       [NAME]: 'Synthetix Synth iETH Token',
       [SYMBOL]: 'iETH',
       [DECIMALS]: 18
     },
-    '0x93962784C651a46E7a9f0f75ca97CB5887B43383': {
+    '0xB200f7b1391e336Fd334D1ae90Ab7bE32b7DeABb': {
       [NAME]: 'Synthetix Synth iMKR Token',
       [SYMBOL]: 'iMKR',
       [DECIMALS]: 18
     },
-    '0x2E82c68c50012a1fF440d9cC71Fbc78981279eeD': {
+    '0xA46b98474F9D0458E3adE89e3482c04D280AF06e': {
       [NAME]: 'Synthetix Synth iTRX Token',
       [SYMBOL]: 'iTRX',
       [DECIMALS]: 18
     },
-    '0xA50142739C3D365B5348602E7d976dEF9369D5Fc': {
+    '0xE5A2286Fd6dAd65d74CC10910f967415B1A0E2bE': {
       [NAME]: 'Synthetix Synth iXTZ Token',
       [SYMBOL]: 'iXTZ',
       [DECIMALS]: 18
