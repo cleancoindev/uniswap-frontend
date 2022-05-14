@@ -5,7 +5,7 @@
   "homepage": "https://uniswap.exchange",
   "private": true,
   "dependencies": {
-    "@reach/dialog": "^0.2.8",
+    "@reach/dialog": "^0.17.0",
     "@reach/tooltip": "^0.2.0",
     "@uniswap/sdk": "^1.0.0-beta.4",
     "copy-to-clipboard": "^3.2.0",
